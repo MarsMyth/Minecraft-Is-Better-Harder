@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-harder",
+	"version": "${version}",
+	"name": "Minecraft is Better Harder",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mars Myth - Mythical Studios"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-harder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.net.marsmyth.mibh.MinecraftIsBetterHarder"
+		],
+		"client": [
+			"org.net.marsmyth.mibh.MinecraftIsBetterHarderClient"
+		],
+		"fabric-datagen": [
+			"org.net.marsmyth.mibh.MinecraftIsBetterHarderDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-harder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
